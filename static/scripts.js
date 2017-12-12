@@ -56,3 +56,19 @@ $(document).ready(function() {
     $("#generate-button").css("background-color","#4CAF50");
   });
 });
+
+$(document).ready(function() {
+  $("#input_1").keyup(function(event) {
+    if (event.keyCode === 13) {
+      $("#generate-button").click();
+    }
+  });
+});
+
+$(document).ready(function() {
+  $("#input_2").keyup(function(event) {
+    if (event.keyCode === 13) {
+      $("#generate-button").click();
+    }
+  });
+});
