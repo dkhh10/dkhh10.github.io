@@ -45,7 +45,12 @@
       <textarea style="resize:none" name="zz" id="myInput" cols="40" rows="6" for "email username"></textarea>
       <!-- The button used to copy the text -->
       <br />
-      <button type="button" class="button2" onclick="myFunction()">Copy URL</button>
+      <script>
+      (function() {
+        new Clipboard('#copy-button');
+      })();
+      </script>
+      <button type="button" id="copy-button" data-clipboard-target="#myInput" >Copy URL_new</button>
     </fieldset>
   </form>
 
