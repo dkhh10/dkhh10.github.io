@@ -26,3 +26,33 @@ function myFunction() {
   copyText.select();
   document.execCommand("copy");
 }
+
+$(document).ready(function() {
+  $("#copy-button").click(function() {
+    $("#copy-button").css("background-color","grey");
+  });
+});
+
+$(document).ready(function() {
+  $("#generate-button").click(function() {
+    $("#copy-button").css("background-color","white");
+  });
+});
+
+$(document).ready(function() {
+  $("#generate-button").click(function() {
+    $("#generate-button").css("background-color","grey");
+  });
+});
+
+$(document).ready(function() {
+  $("#input_1").click(function() {
+    $("#generate-button").css("background-color","#4CAF50");
+  });
+});
+
+$(document).ready(function() {
+  $("#input_2").click(function() {
+    $("#generate-button").css("background-color","#4CAF50");
+  });
+});
