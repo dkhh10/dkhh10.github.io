@@ -43,10 +43,16 @@ $(document).ready(function() {
   $("#generate-button").click(function() {
     $("#generate-button").css("background-color","grey");
   });
+
+  
+$(document).ready(function() {
+  $("#input_1").click(function() {
+    $("#generate-button").css("background-color","#4CAF50");
+  });
 });
 
 $(document).ready(function() {
-  $("#email_input").click(function() {
+  $("#input_2").click(function() {
     $("#generate-button").css("background-color","#4CAF50");
   });
 });
