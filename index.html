@@ -48,7 +48,7 @@
       <input name="email" type="text" id="input_1" placeholder="Email" /><br />
       Username (eg. referrer first name):<br />
       <input name="username" type="text" id="input_2" placeholder="Username" /><br /><br />
-      <button type="button" class="button" id="generate-button" onclick="updateOutput_url(); gtag('event', 'button', 'clicked', 'url-generator');">Generate URL</button>
+      <button type="button" class="button" id="generate-button" onclick="updateOutput_url(); gtag('event', 'click-url-generator');">Generate URL</button>
       <br /> <br />
       URL Output: <br />
       <!--<input name="zz" id="myInput" for "email username"></input>-->
@@ -60,7 +60,7 @@
         new Clipboard('#copy-button');
       })();
       </script>
-      <button type="button" id="copy-button" data-clipboard-target="#myInput" onclick="gtag('event', 'button', 'clicked', 'copy-url');" >Copy URL</button>
+      <button type="button" id="copy-button" data-clipboard-target="#myInput" onclick="gtag('event', 'click-copy-url');" >Copy URL</button>
     </fieldset>
   </form>
 
